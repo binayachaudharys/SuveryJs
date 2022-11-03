@@ -20,7 +20,7 @@ function App({ blogs }) {
 
   const alertResults = useCallback((sender) => {
     const results = sender.data;
-    results["title"] = titlesubmit.toLowerCase();
+    results["formname"] = titlesubmit.toLowerCase();
     console.log(results);
     const jsonString = JSON.stringify(results);
     alert(jsonString);
