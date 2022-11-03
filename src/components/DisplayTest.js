@@ -27,7 +27,7 @@ function App({ blogs }) {
 
     const createSuvery = async () => {
 
-      await fetch('http://localhost:8000/formans/', {
+      await fetch('https://json-server-three-mu.vercel.app/formans', {
         method: 'POST',
         body: JSON.stringify(results),
         headers: { 'Content-Type': 'application/json' }

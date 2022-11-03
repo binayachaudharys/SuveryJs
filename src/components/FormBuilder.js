@@ -51,7 +51,7 @@ const FormBuilder = () => {
       const createSuvery = async (e) => {
         e.preventDefault();
 
-        await fetch('http://localhost:8000/formquestion/', {
+        await fetch('https://json-server-three-mu.vercel.app/formquestion/', {
             method: 'POST',
             body: JSON.stringify(surveyJson),
             headers: { 'Content-Type': 'application/json' }

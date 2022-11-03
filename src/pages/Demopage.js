@@ -21,7 +21,7 @@ const Demopage = () => {
     const [blogs, setBlogs] = useState(null)
 
   useEffect(() => {
-    fetch('http://localhost:8000/formquestion/')
+    fetch('https://json-server-three-mu.vercel.app/formquestion/')
       .then(res => {
         return res.json();
       })

@@ -134,6 +134,49 @@
         }
       ],
       "id": 4
+    },
+    {
+      "title": "Tree",
+      "description": "Form Description",
+      "elements": [
+        {
+          "id": "17bca35c-8243-4b95-9306-809adbe02d25",
+          "type": "text",
+          "title": "Name of Your City?",
+          "isRequired": false
+        },
+        {
+          "id": "cf6b5430-d0a5-4e87-b3cf-a14d2b9255ff",
+          "type": "comment",
+          "title": "Write About you?",
+          "isRequired": false
+        },
+        {
+          "id": "32be53e9-a776-40f4-abde-ee65f03d88d0",
+          "type": "checkbox",
+          "title": "You are ?",
+          "isRequired": false,
+          "choices": [
+            {
+              "value": "Student",
+              "text": "Student"
+            },
+            {
+              "value": "techer",
+              "text": "techer"
+            },
+            {
+              "value": "Vendor",
+              "text": "Vendor"
+            },
+            {
+              "value": "admin",
+              "text": "admin"
+            }
+          ]
+        }
+      ],
+      "id": 5
     }
   ],
   "formans": [
