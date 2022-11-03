@@ -3,16 +3,16 @@ import { Link, useLocation } from "react-router-dom";
 const BlogList = ({ blogs }) => {
 
     var indexid = 0;
-  
- 
- function  del(id){
+
+
+    function del(id) {
         const ids = id;
         console.log(ids);
-        const res =  fetch('http://localhost:8000/formquestion/' + ids, {
+        const res = fetch('http://localhost:8000/formquestion/' + ids, {
             method: 'DELETE'
-          });
-       
-          
+        });
+
+
     }
     return (
         <div className="blog-list">
@@ -34,7 +34,10 @@ const BlogList = ({ blogs }) => {
                             <td className="form-th"> {indexid}</td>
                             <td className="form-th">{formlist.title}</td>
                             <td className="form-th">{formlist.description}</td>
-                            <td className="form-th">  <Link className='btn btn-success d-inline btn-sm' to="/form-view" state={formlist.id}>Display Form</Link> <button className='btn btn-success d-inline btn-sm ' onClick={()=> del(formlist.id)}> DELETE</button></td>
+                            <td className="form-th"> 
+                             <Link className='btn btn-success d-inline btn-sm' to={`/form-view/${formlist.id}`} >Display Form</Link> 
+                             {/* <button className='btn btn-success d-inline btn-sm ' onClick={() => del(formlist.id)}> DELETE</button> */}
+                             </td>
                         </tr>
                         </tbody>
                     })}

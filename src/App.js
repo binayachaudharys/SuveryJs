@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/create-form" element={<CreateForm />} />
         <Route path="/form-list" element={<Demopage />} />
-        <Route path="/form-view" element={<ViewForm/>} />
+        <Route path="/form-view/:id" element={<ViewForm />} />
       </Routes>
     </BrowserRouter>
   );

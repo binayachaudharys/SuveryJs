@@ -9,6 +9,9 @@ function NavMenu() {
       <Nav.Item>
         <Nav.Link href="/" style={{color:"black"}}>Form Builder</Nav.Link>
       </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/form-list" style={{color:"black"}}>Form List</Nav.Link>
+      </Nav.Item>
  
     </Nav>
   );
