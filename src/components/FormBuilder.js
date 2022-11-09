@@ -68,11 +68,11 @@ const FormBuilder = () => {
                         <Card className="mt-5 mb-3">
                             <div className="mb-4">
                                 <label htmlFor="fromTitle" className="form-label">Form Title</label>
-                                <input type="text" className="form-control" id="fromTitle" value="" required onChange={(e) => setTitle(e.target.value)} />
+                                <input type="text" className="form-control" id="fromTitle" value={title} onChange={(e) => setTitle(e.target.value)} />
                             </div>
                             <div>
                                 <label htmlFor="formDescription" className="form-label">Form Description</label>
-                                <textarea className="form-control" id="formDescription" value="" required onChange={(e) => setDescription(e.target.value)} />
+                                <textarea className="form-control" id="formDescription" value={description} onChange={(e) => setDescription(e.target.value)} />
                             </div>
                         </Card>
                     </Step>
